@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/owl/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./assets/style/owl/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="./assets/style/index.css"/>
+
+
+    <title>StudyFlix</title>
+</head>
+<body>
+    <header >
+        <div class="container">
+            <h2 class="logo">StudyFlix</h2>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#programacao">Programação</a>
+                <a href="#frameworks">FrameWorks</a>
+                
+            </nav>
+        </div>
+    </header>
+    <main id="inicio">
+        <div class="film-main">
+           
+            <div class="container">
+                <h3 class="title">Piratas da Informática <span>(1999)</span></h3>
+                <p class="desc">Mostra como Bill Gates e Steve Jobs fundaram as respectivas Microsoft e Apple e a concorrência entre os dois para ver quem chegava primeiro e as estratégias que utilizaram para criarem suas empresas.</p>
+            </div>
+            <div>
+                <button class="btn"> Assistir</button>
+                <button class="btn"> Mais Informações</button>
+            </div>
+        </div>
+
+        <div class="owl-carousel owl-theme" data-title="Começando a programar" id="programacao">
+            <div class="item"><iframe src="https://www.youtube.com/embed/BTENKdRVS2U" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/ZtMzB5CoekE" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/nLPssMXOExM" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/l_5qTI5EHgc" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/sx4hAHhO9CY" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+         
+        </div>
+        <br/><br/>
+        <div class="owl-carousel owl-theme" data-title="FrameWorks" id="frameworks">
+            <div class="item"><iframe src="https://www.youtube.com/embed/2zqzzTnfa0E" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/dp0zB4n3MUs" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/VMwWUUYmyow" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/P7AONrmOvKk" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/WVtijTZPZck" frameborder="0" width="100%" height="100%" scrolling="no" allowfullscreen></iframe></div>
+         
+        </div>
+        
+        
+    </main>
+    
+    <script src="./assets/script/owl/jquery.min.js"></script>
+    <script src="./assets/script/owl/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                stagePadding: 50,
+                loop:false,
+                margin:10,
+                //nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            });
+            
+        })
+        
+    </script>
+</body>
+</html>
