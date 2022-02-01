@@ -127,6 +127,7 @@ header nav a:hover{
 .film-main .btn:last-child{
     background-color: rgba(29, 29, 29, 0.993);
     color: #fafafa;
+    cursor:not-allowed;
 }
 .film-main .btn:first-child:hover{
     background-color: rgba(224, 224, 224, 0.781);
